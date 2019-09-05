@@ -24,8 +24,18 @@
 
 </div>
 
+<div>
     <input id="sat_filter" placeholder="sat filter" type="text" value="sat">
     <input id="map_filter" placeholder="map filter" type="text" value="mask">
     <input id="files" type="file" multiple onchange="loadPictures(event)">
+</div>
+<div>
+    <label>sat files
+        <input id="files_sat" type="file" multiple onchange="loadSatPictures(event)">
+    </label>
+    <label>map files
+        <input id="files_map" type="file" multiple onchange="loadMapPictures(event)">
+    </label>
 
+</div>
 </body>

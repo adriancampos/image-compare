@@ -26,6 +26,35 @@ function loadPictures(evt) {
     changeIndex(0);
 }
 
+function loadSatPictures(evt) {
+    var files = evt.target.files;
+
+    sat = [];
+
+    for (var i = 0, file; file = files[i]; i++) {
+
+        sat.push(file);
+
+    }
+
+    sat.sort()
+    changeIndex(0);
+}
+
+function loadMapPictures(evt) {
+    var files = evt.target.files;
+
+    map = [];
+
+    for (var i = 0, file; file = files[i]; i++) {
+
+        map.push(file);
+
+    }
+
+    map.sort()
+    changeIndex(0);
+}
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -56,6 +85,11 @@ function deltaIndex(amount) {
 
 function changeIndex(index) {
     curr_index = index;
+
+    if (sat.length == 0 || map.length == 0) {
+        console.log("Skipping index change; one of the arrays is empty.")
+        return;
+    }
 
     dom_sat = document.getElementById("sat");
     dom_map = document.getElementById("map");
