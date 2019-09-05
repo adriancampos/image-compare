@@ -1,0 +1,31 @@
+<head>
+
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+
+    <script src="index.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="images">
+    <div class="side-compare">
+        <img id="sat">
+    <img id="map">
+</div>
+
+    <div class="overlay-container" id="overlay">
+        <img id="overlay_sat">
+        <img id="overlay_map">
+
+    </div>
+
+
+</div>
+
+    <input id="sat_filter" placeholder="sat filter" type="text" value="sat">
+    <input id="map_filter" placeholder="map filter" type="text" value="mask">
+    <input id="files" type="file" multiple onchange="loadPictures(event)">
+
+</body>
