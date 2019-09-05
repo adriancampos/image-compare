@@ -1,6 +1,6 @@
 <head>
 
-    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <link rel="stylesheet" type="text/css" href="index.css">
 
     <script src="index.js"></script>
 
@@ -10,32 +10,32 @@
 <body>
 
     <div class="images">
-    <div class="side-compare">
-        <img id="sat">
-    <img id="map">
-</div>
+        <div class="side-compare">
+            <img id="sat">
+            <img id="map">
+        </div>
 
-    <div class="overlay-container" id="overlay">
-        <img id="overlay_sat">
-        <img id="overlay_map">
+        <div class="overlay-container" id="overlay">
+            <img id="overlay_sat">
+            <img id="overlay_map">
+
+        </div>
+
 
     </div>
 
+    <div>
+        <input id="sat_filter" placeholder="sat filter" type="text" value="sat">
+        <input id="map_filter" placeholder="map filter" type="text" value="mask">
+        <input id="files" type="file" multiple onchange="loadPictures(event)">
+    </div>
+    <div>
+        <label>sat files
+            <input id="files_sat" type="file" multiple onchange="loadSatPictures(event)">
+        </label>
+        <label>map files
+            <input id="files_map" type="file" multiple onchange="loadMapPictures(event)">
+        </label>
 
-</div>
-
-<div>
-    <input id="sat_filter" placeholder="sat filter" type="text" value="sat">
-    <input id="map_filter" placeholder="map filter" type="text" value="mask">
-    <input id="files" type="file" multiple onchange="loadPictures(event)">
-</div>
-<div>
-    <label>sat files
-        <input id="files_sat" type="file" multiple onchange="loadSatPictures(event)">
-    </label>
-    <label>map files
-        <input id="files_map" type="file" multiple onchange="loadMapPictures(event)">
-    </label>
-
-</div>
+    </div>
 </body>

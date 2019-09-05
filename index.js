@@ -58,7 +58,7 @@ function loadMapPictures(evt) {
 
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.body.onkeydown = function(evt) {
+    document.body.onkeydown = function (evt) {
         // console.log(evt)
         switch (evt.keyCode) {
             case 37: // Left
@@ -101,23 +101,23 @@ function changeIndex(index) {
 
 
     var reader_sat = new FileReader();
-    reader_sat.onload = function(){
-      var dataURL = reader_sat.result;
-      dom_sat.src = dataURL;
-      dom_sat.title = image_sat.name
-      dom_overlay_sat.src = dataURL;
-      dom_overlay_sat.title = image_sat.name
+    reader_sat.onload = function () {
+        var dataURL = reader_sat.result;
+        dom_sat.src = dataURL;
+        dom_sat.title = image_sat.name
+        dom_overlay_sat.src = dataURL;
+        dom_overlay_sat.title = image_sat.name
     };
     reader_sat.readAsDataURL(image_sat);
 
-    
+
     var reader_map = new FileReader();
-    reader_map.onload = function(){
-      var dataURL = reader_map.result;
-      dom_map.src = dataURL;
-      dom_map.title = image_map.name;
-      dom_overlay_map.src = dataURL;
-      dom_overlay_map.title = image_map.name;
+    reader_map.onload = function () {
+        var dataURL = reader_map.result;
+        dom_map.src = dataURL;
+        dom_map.title = image_map.name;
+        dom_overlay_map.src = dataURL;
+        dom_overlay_map.title = image_map.name;
     };
     reader_map.readAsDataURL(image_map);
 
