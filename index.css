@@ -24,7 +24,6 @@
 }
 
 .overlay-container img#overlay_map {
-    opacity: .3;
     z-index: 100;
     mix-blend-mode: screen;
 }
