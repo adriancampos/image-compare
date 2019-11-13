@@ -125,5 +125,7 @@ function changeIndex(index) {
     };
     reader_map.readAsDataURL(image_map);
 
+    document.title = index;
+
     // TODO: Overlay
 }
