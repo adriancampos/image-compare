@@ -84,6 +84,10 @@ function deltaIndex(amount) {
 }
 
 function changeIndex(index) {
+    // Clip index to [0, length of array)
+    index = Math.max(index, 0)
+    index = Math.min(index, Math.min(sat.length,map.length) - 1)
+
     curr_index = index;
 
     if (sat.length == 0 || map.length == 0) {
